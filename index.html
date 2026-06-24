@@ -7,213 +7,154 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:linear-gradient(180deg,#5b008f,#8a2be2);
-color:white;
+background:#000;
+color:#fff;
 line-height:1.7;
 }
 
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
 header{
+background:linear-gradient(135deg,#000,#021b35);
+padding:40px 20px;
 text-align:center;
-padding:50px 20px;
 }
 
-.hero-image{
-width:100%;
-max-width:500px;
-border-radius:20px;
-margin-bottom:25px;
-box-shadow:0 8px 25px rgba(0,0,0,.3);
+.logo{
+width:220px;
+max-width:90%;
+border-radius:15px;
 }
 
 h1{
-font-size:3rem;
-margin-bottom:10px;
+color:gold;
+margin-top:15px;
+font-size:2.5rem;
 }
 
 .tagline{
-font-size:1.3rem;
-margin-bottom:25px;
+font-size:1.1rem;
+margin-top:10px;
 }
 
 .btn{
 display:inline-block;
-background:#ffd700;
-color:#4b0082;
-padding:16px 35px;
-border-radius:50px;
+margin-top:20px;
+padding:12px 25px;
+background:gold;
+color:#000;
 text-decoration:none;
 font-weight:bold;
-font-size:1.1rem;
+border-radius:8px;
 }
 
 section{
-padding:40px 0;
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
 }
 
 h2{
+color:gold;
 margin-bottom:20px;
-font-size:2rem;
-color:white;
+text-align:center;
 }
 
-.card{
-background:rgba(255,255,255,.12);
-padding:25px;
-border-radius:20px;
-margin-bottom:20px;
-backdrop-filter:blur(5px);
+.featured img,
+.products img{
+width:100%;
+border-radius:15px;
 }
 
-.grid{
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.review{
-border-left:5px solid #ffd700;
+.gallery img{
+width:100%;
+border-radius:15px;
+box-shadow:0 0 15px rgba(255,215,0,.25);
+}
+
+.product-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:30px;
+}
+
+.card{
+background:#111;
+padding:15px;
+border-left:4px solid gold;
+border-radius:10px;
+}
+
+.contact{
+background:#111;
+text-align:center;
+padding:50px 20px;
+}
+
+.contact a{
+color:gold;
+text-decoration:none;
 }
 
 footer{
-background:rgba(0,0,0,.15);
+background:#000;
+padding:20px;
 text-align:center;
-padding:40px 20px;
-margin-top:40px;
+border-top:1px solid #222;
 }
 
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-z-index:9999;
-box-shadow:0 4px 10px rgba(0,0,0,.3);
+@media(max-width:768px){
+.about{
+grid-template-columns:1fr;
 }
-
-a{
-color:#ffd700;
 }
-
-ul{
-padding-left:20px;
-}
-</style></head><body><div class="container"><header><img src="businessdads.png" alt="Queen K Magic" class="hero-image"><h1>Queen K Magic</h1><p class="tagline">
-Professional Cleaning Solutions For Every Home And Business
-</p><a href="https://wa.me/2347045427377" class="btn">
-Order On WhatsApp
-</a></header><section><h2>About Us</h2><div class="card">
-<p>
-Queen K Magic Multi-Purpose Cleaner is a trusted cleaning solution formulated to deliver powerful cleaning performance while remaining gentle on fabrics and surfaces.
-</p>
-<br>
-<p>
-Our products are designed to remove dirt, grease, stains and unpleasant odors while helping maintain the quality, freshness and appearance of your clothes and surroundings.
-</p>
-</div></section><section><h2>Why Choose Queen K Magic?</h2><div class="card">
-<ul>
-<li>Rich Foamy Formula</li>
-<li>Removes Tough Stains</li>
-<li>Safe For White And Colored Clothes</li>
-<li>Does Not Fade Fabrics When Used Correctly</li>
-<li>Economical And Long Lasting</li>
-<li>Suitable For Homes And Businesses</li>
-<li>Nationwide Delivery Available</li>
-<li>Professional Packaging</li>
-<li>Trusted By Customers Across Nigeria</li>
-</ul>
-</div></section><section><h2>Our Products</h2><div class="grid"><div class="card">
-<h3>🧴 Multi-Purpose Cleaner</h3>
-<p>Laundry, Floors, Toilets, Tiles, Kitchens, Schools, Hotels, Restaurants, Hostels and Car Wash Centers.</p>
-</div><div class="card">
-<h3>🧴 Bleach</h3>
-<p>Brightens white fabrics and removes stubborn stains.</p>
-</div><div class="card">
-<h3>🚽 Toilet Wash</h3>
-<p>Effective toilet and bathroom cleaning solution.</p>
-</div><div class="card">
-<h3>✨ Tile Care</h3>
-<p>Restores shine and cleanliness to tiled surfaces.</p>
-</div><div class="card">
-<h3>👐 Antibacterial Hand Wash</h3>
-<p>Gentle hand cleansing with antibacterial protection.</p>
-</div><div class="card">
-<h3>🍽 Dishwashing Liquid</h3>
-<p>Cleans dishes, utensils and kitchenware effectively.</p>
-</div><div class="card">
-<h3>🚗 Car Wash Shampoo</h3>
-<p>Specially formulated for cars and other vehicles.</p>
-</div><div class="card">
-<h3>💇 Hair Shampoo</h3>
-<p>Quality shampoo for everyday use.</p>
-</div><div class="card">
-<h3>🌸 Air Freshener</h3>
-<p>Leaves rooms smelling fresh and pleasant.</p>
-</div><div class="card">
-<h3>💅 Nail Dissolver</h3>
-<p>Effective nail polish remover.</p>
-</div></div></section><section><h2>Package Prices</h2><div class="grid"><div class="card">
-<h3>15 Litres</h3>
-<p>₦19,500</p>
-</div><div class="card">
-<h3>20 Litres</h3>
-<p>₦24,500</p>
-<p>FREE 1 Bottle</p>
-</div><div class="card">
-<h3>30 Litres</h3>
-<p>₦30,000</p>
-<p>FREE 2 Bottles + Delivery</p>
-</div></div></section><section><h2>Business Services</h2><div class="card">
-<ul>
-<li>Training</li>
-<li>Wholesale & Bulk Orders</li>
-<li>Distributor Opportunities</li>
-<li>White Labelling</li>
-<li>Customized Souvenirs</li>
-</ul>
-</div></section><section><h2>Customer Reviews</h2><div class="card review">
-★★★★★ Queen K Magic removed stubborn stains from my children's school uniforms without fading the fabric.
-</div><div class="card review">
-★★★★★ I've used it on both white and colored clothes. Highly recommended.
-</div><div class="card review">
-★★★★★ Excellent results for our laundry business.
-</div><div class="card review">
-★★★★★ Rich foam and very economical.
-</div></section><section><h2>Frequently Asked Questions</h2><div class="card">
-<p><strong>Do you deliver nationwide?</strong><br>Yes. We deliver across Nigeria.</p>
-<br>
-<p><strong>How long does delivery take?</strong><br>5–7 Working Days.</p>
-<br>
-<p><strong>Is delivery free?</strong><br>Delivery charges apply based on destination.</p>
-<br>
-<p><strong>Do you offer wholesale supplies?</strong><br>Yes.</p>
-<br>
-<p><strong>When is my order confirmed?</strong><br>Payment confirms every order.</p>
-</div></section><section><h2>Contact Us</h2><div class="card"><p>📞 Phone / WhatsApp: 07045427377</p>
-<br><p>📧 Email: queenkmagic@gmail.com</p>
-<br><p>📘 Facebook</p>
-<p>https://www.facebook.com/share/1EuANXsVSg/</p>
-<br><p>📸 Instagram</p>
-<p>https://www.instagram.com/queenkmagic</p>
-<br><p>🎵 TikTok</p>
-<p>https://vt.tiktok.com/ZSCen2EVK/</p>
-<br><a href="https://wa.me/2347045427377" class="btn">
-Place Order Now
-</a></div></section><footer><h3>Queen K Magic Multi-Purpose Cleaner</h3><p>Professional Cleaning Solutions For Every Home And Business.</p><p>Clean Better. Save More. Experience The Magic.</p></footer></div><a href="https://wa.me/2347045427377" class="whatsapp-float">
-WhatsApp Us
-</a></body>
+</style></head><body><header><img src="businessdads.png" alt="Queen K Magic Logo" class="logo"><h1>QUEEN K MAGIC</h1><p class="tagline">
+Professional Cleaning Solutions For Every Home & Business
+</p><a class="btn" href="https://wa.me/2347045427377">
+Order Now On WhatsApp
+</a></header><section class="featured"><h2>Special Promotion</h2><img src="fathersday.png" alt="Father's Day Promo"></section><section class="about"><div>
+<img src="father-son.png" alt="Father and Son">
+</div><div><h2>About Queen K Magic</h2><p>
+Queen K Magic Multi-Purpose Cleaner is formulated to remove dirt, grease, stains and unpleasant odours while remaining gentle on fabrics and surfaces.
+</p><br><p>
+Trusted by homes, schools, hostels, hotels, restaurants, laundries, cleaning companies and commercial facilities.
+</p><br><p>
+Our rich foaming formula delivers powerful cleaning performance while helping maintain the quality and appearance of your clothes and surroundings.
+</p></div></section><section class="products"><h2>Our Products</h2><img src="Products.heic" alt="Queen K Magic Products"><div class="product-list"><div class="card">Multi-Purpose Cleaner</div><div class="card">Bleach</div><div class="card">Toilet Wash</div><div class="card">Tile Care</div><div class="card">Dishwashing Liquid</div><div class="card">Antibacterial Hand Wash</div><div class="card">Car Wash Shampoo</div><div class="card">Hair Shampoo</div><div class="card">Air Freshener</div><div class="card">Nail Dissolver</div><div class="card">Customized Souvenirs</div><div class="card">White Labelling Services</div></div></section><section><h2>Why Choose Queen K Magic?</h2><div class="product-list"><div class="card">✓ Rich Foaming Formula</div><div class="card">✓ Removes Tough Stains</div><div class="card">✓ Safe For White & Coloured Clothes</div><div class="card">✓ Economical & Long Lasting</div><div class="card">✓ Professionally Packaged</div><div class="card">✓ Nationwide Delivery</div></div></section><section><h2>Gallery</h2><div class="gallery"><img src="businessdads.png" alt="Logo"><img src="fathersday.png" alt="Promo"><img src="father-son.png" alt="Father and Son"><img src="Products.heic" alt="Products"></div></section><section class="contact"><h2>Contact Us</h2><p>📞 WhatsApp: 07045427377</p><p>📧 queenkmagic@gmail.com</p><p>🚚 Nationwide Delivery Available</p><br><p>
+Facebook:
+<a href="https://www.facebook.com/share/1EuANXsVSg/">
+Visit Page
+</a>
+</p><p>
+Instagram:
+<a href="https://www.instagram.com/queenkmagic">
+@queenkmagic
+</a>
+</p><p>
+TikTok:
+<a href="https://vt.tiktok.com/ZSCen2EVK/">
+Visit TikTok
+</a>
+</p></section><footer><h3>Queen K Magic Multi-Purpose Cleaner</h3><p>Cleaning Made Easy.</p><p>© 2026 All Rights Reserved.</p></footer></body>
 </html>
