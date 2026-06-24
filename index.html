@@ -26,11 +26,12 @@ padding:60px 20px;
 text-align:center;
 }
 
-.logo{
-width:180px;
-max-width:90%;
-border-radius:20px;
-margin-bottom:20px;
+.hero-logo{
+max-width:250px;
+width:100%;
+display:block;
+margin:0 auto 20px;
+border-radius:15px;
 }
 
 header h1{
@@ -85,6 +86,11 @@ border-radius:15px;
 box-shadow:0 4px 15px rgba(0,0,0,.1);
 }
 
+.product img{
+width:100%;
+border-radius:10px;
+}
+
 .review{
 background:white;
 padding:20px;
@@ -93,16 +99,17 @@ margin-bottom:15px;
 border-radius:10px;
 }
 
+.contact a{
+color:#6a0dad;
+text-decoration:none;
+font-weight:bold;
+}
+
 footer{
 background:#2b0057;
 color:white;
 text-align:center;
 padding:30px 20px;
-}
-
-.contact a{
-color:#ffd700;
-text-decoration:none;
 }
 
 ul{
@@ -113,16 +120,20 @@ padding-left:20px;
 background:#fff3cd;
 border-left:5px solid #ffc107;
 padding:15px;
-margin-top:15px;
 border-radius:10px;
 font-weight:bold;
 }
 
-.hero-logo{
-max-width:250px;
-width:100%;
-margin:auto;
-display:block;
+@media(max-width:768px){
+
+header h1{
+font-size:2rem;
+}
+
+.products{
+grid-template-columns:1fr;
+}
+
 }
 </style>
 </head>
@@ -131,7 +142,7 @@ display:block;
 
 <header>
 
-<img src="file_00000000f50871fb9b90196560120dfb.png" alt="Queen K Magic Logo" class="hero-logo">
+<img src="logo.jpg" alt="Queen K Magic Logo" class="hero-logo">
 
 <h1>Queen K Magic</h1>
 
@@ -148,6 +159,7 @@ Order On WhatsApp
 <h2>About Us</h2>
 
 <div class="card">
+
 <p>
 Queen K Magic Multi-Purpose Cleaner is a trusted cleaning solution formulated to deliver powerful cleaning performance while remaining gentle on fabrics and surfaces.
 </p>
@@ -157,6 +169,7 @@ Queen K Magic Multi-Purpose Cleaner is a trusted cleaning solution formulated to
 <p>
 Our products are designed to remove dirt, grease, stains and unpleasant odors while helping maintain the quality and appearance of your clothes and surroundings.
 </p>
+
 </div>
 
 </section>
@@ -166,9 +179,10 @@ Our products are designed to remove dirt, grease, stains and unpleasant odors wh
 <h2>Why Choose Queen K Magic?</h2>
 
 <div class="card">
+
 <ul>
-<li>Rich Foamy Formula</li>
-<li>Removes Tough Stains</li>
+<li>Rich Foaming Formula</li>
+<li>Effectively Removes Tough Stains</li>
 <li>Safe For White And Colored Clothes</li>
 <li>Does Not Fade Fabrics When Used Correctly</li>
 <li>Economical And Long Lasting</li>
@@ -176,6 +190,7 @@ Our products are designed to remove dirt, grease, stains and unpleasant odors wh
 <li>Nationwide Delivery Available</li>
 <li>Professional Packaging</li>
 </ul>
+
 </div>
 
 </section>
@@ -187,47 +202,57 @@ Our products are designed to remove dirt, grease, stains and unpleasant odors wh
 <div class="products">
 
 <div class="product">
-<h3>🧴 Multi-Purpose Cleaner</h3>
-<p>Laundry, Floors, Toilets, Tiles, Kitchens, Hostels, Schools, Restaurants, Hotels & Car Wash.</p>
+<h3>Multi-Purpose Cleaner</h3>
+<p>Laundry, Floors, Toilets, Tiles, Kitchens, Hostels, Schools, Restaurants, Hotels and Car Wash.</p>
 </div>
 
 <div class="product">
-<h3>🧴 Bleach</h3>
+<h3>Bleach</h3>
 <p>Brightens white fabrics and removes stubborn stains.</p>
 </div>
 
 <div class="product">
-<h3>🚽 Toilet Wash</h3>
+<h3>Toilet Wash</h3>
 <p>Effective toilet and bathroom cleaning solution.</p>
 </div>
 
 <div class="product">
-<h3>✨ Tile Care</h3>
-<p>Helps restore shine and cleanliness to tiled surfaces.</p>
+<h3>Tile Care</h3>
+<p>Restores shine and cleanliness to tiled surfaces.</p>
 </div>
 
 <div class="product">
-<h3>👐 Hand Wash</h3>
-<p>Antibacterial protection with gentle cleansing.</p>
+<h3>Antibacterial Hand Wash</h3>
+<p>Gentle hand cleansing with antibacterial protection.</p>
 </div>
 
 <div class="product">
-<h3>💇 Hair Shampoo</h3>
+<h3>Dishwashing Liquid</h3>
+<p>Cleans dishes, utensils and kitchenware effectively.</p>
+</div>
+
+<div class="product">
+<h3>Car Wash Shampoo</h3>
+<p>Specially formulated for washing vehicles.</p>
+</div>
+
+<div class="product">
+<h3>Hair Shampoo</h3>
 <p>Quality shampoo for everyday use.</p>
 </div>
 
 <div class="product">
-<h3>🌸 Air Freshener</h3>
+<h3>Air Freshener</h3>
 <p>Leaves rooms smelling fresh and pleasant.</p>
 </div>
 
 <div class="product">
-<h3>💅 Nail Dissolver</h3>
+<h3>Nail Dissolver</h3>
 <p>Effective nail polish remover.</p>
 </div>
 
 <div class="product">
-<h3>🎁 Customized Souvenirs</h3>
+<h3>Customized Souvenirs</h3>
 <p>Customized products and gift packages for events and organizations.</p>
 </div>
 
@@ -240,13 +265,15 @@ Our products are designed to remove dirt, grease, stains and unpleasant odors wh
 <h2>Business Services</h2>
 
 <div class="card">
+
 <ul>
-<li>Training On Product Production</li>
+<li>Training</li>
 <li>Wholesale Supplies</li>
 <li>Bulk Orders</li>
 <li>Distributor Opportunities</li>
 <li>White Labelling Services</li>
 </ul>
+
 </div>
 
 </section>
@@ -279,4 +306,135 @@ Our products are designed to remove dirt, grease, stains and unpleasant odors wh
 
 <div class="card">
 
-<p><
+<p><strong>Do you deliver nationwide?</strong><br>
+Yes. We deliver across Nigeria.</p>
+
+<br>
+
+<p><strong>How long does delivery take?</strong><br>
+Delivery typically takes 5–7 working days.</p>
+
+<br>
+
+<p><strong>Is delivery free?</strong><br>
+Delivery charges apply based on destination.</p>
+
+<br>
+
+<p><strong>Do you offer wholesale supplies?</strong><br>
+Yes. Wholesale and bulk order discounts are available.</p>
+
+<br>
+
+<p><strong>When is my order confirmed?</strong><br>
+Payment confirms every order.</p>
+
+<br>
+
+<p><strong>Can I order customized products?</strong><br>
+Yes. Customized souvenir packages are available.</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Father's Day Promotions</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="fathersday.png" alt="Father's Day Promo">
+</div>
+
+<div class="product">
+<img src="businessdads.png" alt="Business Dads Promo">
+</div>
+
+<div class="product">
+<img src="father-son.png" alt="Father and Son">
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Order Information</h2>
+
+<div class="card">
+
+<div class="notice">
+Payment confirms every order. Orders are processed only after payment confirmation.
+</div>
+
+<br>
+
+<p>🚚 Nationwide Delivery Available</p>
+<p>⏱ Delivery Time: 5–7 Working Days</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Contact Us</h2>
+
+<div class="card contact">
+
+<p><strong>Phone / WhatsApp:</strong><br>
+07045427377</p>
+
+<br>
+
+<p><strong>Email:</strong><br>
+queenkmagic@gmail.com</p>
+
+<br>
+
+<p><strong>Facebook:</strong><br>
+https://www.facebook.com/share/1EuANXsVSg/</p>
+
+<br>
+
+<p><strong>Instagram:</strong><br>
+https://www.instagram.com/queenkmagic</p>
+
+<br>
+
+<p><strong>TikTok:</strong><br>
+https://vt.tiktok.com/ZSCen2EVK/</p>
+
+<br>
+
+<a class="btn" href="https://wa.me/2347045427377">
+Order Now On WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Queen K Magic Multi-Purpose Cleaner</h3>
+
+<p>
+Professional Cleaning Solutions For Every Home And Business
+</p>
+
+<br>
+
+<p>
+Nationwide Delivery Available
+</p>
+
+</footer>
+
+</body>
+</html>
+
+
