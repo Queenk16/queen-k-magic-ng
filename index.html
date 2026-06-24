@@ -1,161 +1,379 @@
 <!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Queen K Magic Multi-Purpose Cleaner</title><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Queen K Magic Multi-Purpose Cleaner</title><style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 }
 
 body{
-background:#f8f8f8;
-color:#333;
-line-height:1.6;
+background:#050505;
+color:#ffffff;
+line-height:1.7;
 }
 
 header{
-background:#0b3d0b;
-color:white;
+background:linear-gradient(135deg,#000000,#111111);
+padding:60px 20px;
 text-align:center;
-padding:30px 20px;
+border-bottom:3px solid gold;
 }
 
-header img{
-width:120px;
-border-radius:50%;
+.logo{
+width:180px;
+max-width:100%;
+margin-bottom:20px;
+}
+
+h1{
+font-size:3rem;
+color:gold;
 margin-bottom:10px;
 }
 
+.subtitle{
+font-size:1.1rem;
+max-width:800px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:14px 30px;
+margin-top:20px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+nav{
+background:#111;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav a{
+color:gold;
+text-decoration:none;
+margin:0 12px;
+font-weight:bold;
+}
+
 section{
-padding:40px 20px;
+padding:60px 20px;
 max-width:1200px;
 margin:auto;
 }
 
 h2{
-color:#0b3d0b;
-margin-bottom:15px;
+color:gold;
+margin-bottom:20px;
+text-align:center;
+font-size:2rem;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:12px;
+margin-bottom:20px;
+border:1px solid #333;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
 .gallery img{
 width:100%;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.2);
+border-radius:12px;
+border:2px solid gold;
 }
 
-.products-grid{
+.video-box{
+max-width:900px;
+margin:auto;
+}
+
+video{
+width:100%;
+border-radius:12px;
+border:2px solid gold;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:30px;
+border-top:3px solid gold;
+}
+
+.review{
+background:#111;
+padding:20px;
+border-left:4px solid gold;
+margin-bottom:15px;
+border-radius:10px;
+}
+
+.product-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-video{
-width:100%;
-border-radius:10px;
-}
-
-.review{
-background:white;
-padding:20px;
-margin-bottom:15px;
-border-left:5px solid green;
-border-radius:8px;
-}
-
-.cta{
-text-align:center;
-padding:50px 20px;
-background:#0b3d0b;
-color:white;
-}
-
-.btn{
-display:inline-block;
-padding:15px 30px;
-background:#25D366;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-margin-top:15px;
-}
-
-footer{
+.product-card{
 background:#111;
-color:white;
-text-align:center;
-padding:30px 20px;
+padding:20px;
+border-radius:12px;
+border:1px solid #333;
 }
 
-.social a{
-color:white;
-text-decoration:none;
-display:block;
-margin:5px 0;
+.product-card h3{
+color:gold;
+margin-bottom:10px;
 }
-</style></head><body><header><img src="logo.jpg" alt="Queen K Magic Logo"><h1>Queen K Magic Multi-Purpose Cleaner</h1><p>Professional Cleaning Solutions For Every Home And Business</p></header><section><h2>About Us</h2><p>
-Queen K Magic Multi-Purpose Cleaner is a trusted cleaning solution formulated to deliver powerful cleaning performance while remaining gentle on fabrics and surfaces.
-</p><br><h3>Why Choose Queen K Magic?</h3><ul>
-<li>Rich Foaming Formula</li>
-<li>Effectively Removes Tough Stains</li>
-<li>Safe For White And Colored Clothes</li>
-<li>Does Not Fade Fabrics When Used Correctly</li>
-<li>Economical And Long Lasting</li>
-<li>Suitable For Homes And Businesses</li>
-<li>Nationwide Delivery Available</li>
-<li>Professionally Packaged</li>
-</ul></section><section><h2>Product Gallery</h2><div class="gallery"><img src="Products.jpg" alt="Products"><img src="Products1.jpg" alt="Products"></div></section><section><h2>Promotional Flyers</h2><div class="gallery"><img src="fathersday.png" alt="Father's Day Promo"><img src="businessdads.png" alt="Business Dads Promo"><img src="father-son.png" alt="Father and Son"></div></section><section><h2>Watch Our Product Video</h2><video controls><source src="Queenkmagic3.mp4" type="video/mp4"></video></section><section><h2>Our Products</h2><div class="products-grid"><div class="card">Multi-Purpose Cleaner</div><div class="card">Bleach</div><div class="card">Toilet Wash</div><div class="card">Tile Care</div><div class="card">Antibacterial Hand Wash</div><div class="card">Dishwashing Liquid</div><div class="card">Car Wash Shampoo</div><div class="card">Hair Shampoo</div><div class="card">Air Freshener</div><div class="card">Nail Dissolver</div><div class="card">Customized Souvenirs</div></div></section><section><h2>Package Benefits</h2><ul>
-<li>Free Sticker</li>
-<li>Free Seal</li>
-<li>Professional Packaging</li>
-</ul></section><section><h2>Business Services</h2><ul>
-<li>Training</li>
-<li>Wholesale Supplies</li>
-<li>Bulk Orders</li>
-<li>White Labelling</li>
-</ul></section><section><h2>Customer Reviews</h2><div class="review">
-★★★★★
-<br><br>
-"Queen K Magic Multi-Purpose Cleaner removed stubborn stains from my children's school uniforms without fading the fabric."
-</div><div class="review">
-★★★★★
-<br><br>
-"I've used the cleaner on both white and colored clothes. It cleans thoroughly and does not fade fabrics."
-</div><div class="review">
-★★★★★
-<br><br>
-"The bleach helped restore the brightness of my white bedsheets and uniforms."
-</div><div class="review">
-★★★★★
-<br><br>
-"Our laundry business relies on Queen K Magic products because they deliver excellent cleaning results."
-</div><div class="review">
-★★★★★
-<br><br>
-"The rich foam makes cleaning easier and more economical."
-</div></section><section><h2>Frequently Asked Questions</h2><p><strong>Do you deliver nationwide?</strong><br>Yes. We deliver across Nigeria.</p><br><p><strong>How long does delivery take?</strong><br>5–7 working days.</p><br><p><strong>Is delivery free?</strong><br>No. Delivery charges apply.</p><br><p><strong>Do you offer wholesale supplies?</strong><br>Yes.</p><br><p><strong>Payment confirms every order?</strong><br>Yes.</p></section><section><h2>Order Information</h2><p>🚚 Nationwide Delivery Available</p><p>⏱ Delivery Time: 5–7 Working Days</p><p>Payment confirms every order.</p></section><section class="cta"><h2>Order Now</h2><p>Click the WhatsApp button below to place your order.</p><a href="https://wa.me/2347045427377" class="btn">
+
+</style></head><body><header><img src="logo.jpg" alt="Queen K Magic Logo" class="logo"><h1>QUEEN K MAGIC</h1><p class="subtitle">
+Professional Cleaning Solutions For Homes, Hotels, Restaurants,
+Schools, Hostels, Laundries, Car Wash Centres And Commercial Facilities.
+</p><a href="https://wa.me/2347045427377" class="btn">
 Order On WhatsApp
-</a></section><footer><h3>Contact Us</h3><p>📞 07045427377</p><p>📧 queenkmagic@gmail.com</p><div class="social"><a href="https://www.facebook.com/share/1EuANXsVSg/">Facebook</a>
+</a></header><nav><a href="#about">About</a>
 
-<a href="https://www.instagram.com/queenkmagic">Instagram</a>
+<a href="#products">Products</a>
 
-<a href="https://vt.tiktok.com/ZSCen2EVK/">TikTok</a>
+<a href="#gallery">Gallery</a>
 
-</div><br><p>Queen K Magic Multi-Purpose Cleaner</p><p>Professional Cleaning Solutions For Every Home And Business</p></footer></body>
+<a href="#video">Video</a>
+
+<a href="#reviews">Reviews</a>
+
+<a href="#contact">Contact</a>
+
+</nav><section id="gallery"><h2>Product Gallery</h2><div class="gallery"><img src="Products.jpg" alt="Queen K Magic Product"><img src="Products1.jpg" alt="Queen K Magic Products"><img src="businessdads.png" alt="Business Promotion"><img src="father-son.png" alt="Customer Promotion"><img src="fathersday.png" alt="Special Offer"></div></section><section id="video"><h2>Product Video</h2><div class="video-box"><video controls><source src="Queenkmagic3.mp4" type="video/mp4">Your browser does not support video playback.
+
+</video></div></section>
+  
+<section id="about">
+<h2>About Queen K Magic</h2>
+
+<div class="card">
+<p>
+Queen K Magic Multi-Purpose Cleaner is a trusted cleaning solution
+designed to remove dirt, grease, stains and unpleasant odours while
+remaining gentle on fabrics and surfaces.
+</p>
+
+<br>
+
+<p>
+Our products are suitable for homes, schools, hostels, hotels,
+restaurants, laundries, car wash centres and commercial facilities.
+</p>
+
+<br>
+
+<p>
+We are committed to providing quality cleaning products that help
+customers clean more and spend less.
+</p>
+</div>
+</section>
+
+<section id="products">
+<h2>Our Products</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<h3>Multi-Purpose Cleaner</h3>
+<p>Suitable for laundry, floors, toilets, kitchens, tiles and general cleaning.</p>
+</div>
+
+<div class="product-card">
+<h3>Bleach</h3>
+<p>Helps brighten white fabrics and remove stubborn stains.</p>
+</div>
+
+<div class="product-card">
+<h3>Toilet Wash</h3>
+<p>Effective cleaning solution for toilets and bathrooms.</p>
+</div>
+
+<div class="product-card">
+<h3>Tile Care</h3>
+<p>Restores shine and cleanliness to tiled surfaces.</p>
+</div>
+
+<div class="product-card">
+<h3>Dishwashing Liquid</h3>
+<p>Removes grease and leaves dishes sparkling clean.</p>
+</div>
+
+<div class="product-card">
+<h3>Antibacterial Hand Wash</h3>
+<p>Gentle cleansing with antibacterial protection.</p>
+</div>
+
+<div class="product-card">
+<h3>Car Wash Shampoo</h3>
+<p>Specially formulated for washing cars and other vehicles.</p>
+</div>
+
+<div class="product-card">
+<h3>Air Freshener</h3>
+<p>Leaves rooms smelling fresh and pleasant.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Special Offer</h2>
+
+<div class="card">
+<h3 style="color:gold;">Buy More & Save More</h3>
+
+<p>🎁 Free Sticker</p>
+<p>🎁 Free Seal</p>
+<p>🎁 Professional Packaging</p>
+<p>🎁 Wholesale Discounts Available</p>
+<p>🎁 Nationwide Delivery</p>
+
+<br>
+
+<a href="https://wa.me/2347045427377" class="btn">
+Order Now
+</a>
+</div>
+</section>
+
+<section id="reviews">
+<h2>Customer Reviews</h2>
+
+<div class="review">
+★★★★★
+Queen K Magic removed stubborn stains from my children's school uniforms without fading the fabric.
+</div>
+
+<div class="review">
+★★★★★
+I've used the cleaner on both white and coloured clothes. It cleans thoroughly and leaves a fresh scent.
+</div>
+
+<div class="review">
+★★★★★
+The rich foam makes cleaning easier and more economical. A little goes a long way.
+</div>
+
+<div class="review">
+★★★★★
+Our laundry business relies on Queen K Magic because the products consistently deliver excellent results.
+</div>
+
+<div class="review">
+★★★★★
+The bleach restored the brightness of my white bedsheets and uniforms perfectly.
+</div>
+
+</section>
+
+<section>
+<h2>Frequently Asked Questions</h2>
+
+<div class="card">
+
+<p><strong>Do you deliver nationwide?</strong></p>
+<p>Yes. We deliver across Nigeria.</p>
+
+<br>
+
+<p><strong>How long does delivery take?</strong></p>
+<p>Typically 5–7 working days after payment confirmation.</p>
+
+<br>
+
+<p><strong>Do you offer wholesale supplies?</strong></p>
+<p>Yes. Wholesale and bulk order discounts are available.</p>
+
+<br>
+
+<p><strong>When is my order confirmed?</strong></p>
+<p>Payment confirms every order.</p>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+
+<div class="card">
+
+<p>📞 Phone / WhatsApp: 07045427377</p>
+
+<br>
+
+<p>📧 Email: queenkmagic@gmail.com</p>
+
+<br>
+
+<p>📘 Facebook:
+<a href="https://www.facebook.com/share/1EuANXsVSg/" style="color:gold;">
+Queen K Magic
+</a>
+</p>
+
+<br>
+
+<p>📸 Instagram:
+<a href="https://www.instagram.com/queenkmagic" style="color:gold;">
+@queenkmagic
+</a>
+</p>
+
+<br>
+
+<p>🎵 TikTok:
+<a href="https://vt.tiktok.com/ZSCen2EVK/" style="color:gold;">
+Queen K Magic
+</a>
+</p>
+
+<br>
+
+<a href="https://wa.me/2347045427377" class="btn">
+Chat On WhatsApp
+</a>
+
+</div>
+</section>
+
+<footer>
+<h3 style="color:gold;">Queen K Magic Multi-Purpose Cleaner</h3>
+
+<p>Professional Cleaning Solutions For Every Home And Business.</p>
+
+<br>
+
+<p>© 2026 Queen K Magic. All Rights Reserved.</p>
+</footer>
+
+</body>
 </html>
