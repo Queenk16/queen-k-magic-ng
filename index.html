@@ -3,420 +3,804 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Queen K Magic Store</title>
+
+<title>Queen K Magic | Premium Cleaning Products</title>
+
+<meta name="description"
+content="Queen K Magic supplies premium household and commercial cleaning products including Multi-Purpose Cleaner, Super Whitening Bleach, Toilet Wash and Tile Care Cleaner.">
+
+<meta name="keywords"
+content="Queen K Magic, Cleaning Products Nigeria, Bleach, Toilet Wash, Tile Cleaner, Multi-Purpose Cleaner">
+
+<meta name="theme-color" content="#000000">
 
 <style>
-body{
+
+*{
 margin:0;
-font-family:Arial;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
 background:#050505;
 color:#fff;
+line-height:1.6;
 }
 
-/* HEADER */
 header{
+
+background:
+linear-gradient(rgba(0,0,0,.75),
+rgba(0,0,0,.75));
+
+padding:70px 20px;
 text-align:center;
-padding:50px 15px;
-background:linear-gradient(135deg,#000,#111);
-border-bottom:2px solid gold;
+border-bottom:3px solid gold;
+
 }
 
-h1{color:gold;font-size:2.5rem}
+.logo{
+
+width:140px;
+max-width:90%;
+
+}
+
+h1{
+
+color:gold;
+margin-top:15px;
+font-size:42px;
+
+}
 
 .subtitle{
-max-width:800px;
-margin:auto;
-opacity:0.9;
+
+margin-top:10px;
+font-size:18px;
+color:#ddd;
+
+}
+
+.hero-buttons{
+
+margin-top:30px;
+
 }
 
 .btn{
+
 display:inline-block;
-background:#25D366;
-padding:12px 20px;
-border-radius:25px;
-color:#fff;
+padding:14px 24px;
+border-radius:40px;
 text-decoration:none;
-margin-top:15px;
 font-weight:bold;
+margin:8px;
+
 }
 
-/* NAV */
+.whatsapp{
+
+background:#25D366;
+color:white;
+
+}
+
+.catalogue{
+
+background:gold;
+color:black;
+
+}
+
 nav{
-text-align:center;
-padding:10px;
-background:#111;
+
 position:sticky;
 top:0;
+background:#111;
+padding:15px;
+z-index:1000;
+text-align:center;
+
 }
 
 nav a{
+
 color:gold;
-margin:0 10px;
 text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+
 }
 
-/* SECTIONS */
 section{
-padding:40px 15px;
-max-width:1100px;
+
+max-width:1200px;
 margin:auto;
+padding:60px 20px;
+
 }
 
 h2{
+
 text-align:center;
 color:gold;
+margin-bottom:25px;
+
 }
 
-/* GALLERY */
-.gallery-grid{
+.about{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+
 }
 
-.gallery-item{
-background:#111;
-border-radius:10px;
-overflow:hidden;
-border:1px solid #333;
-}
+.about img{
 
-.gallery-item img{
 width:100%;
-height:180px;
-object-fit:cover;
+border-radius:12px;
+
 }
 
-.gallery-item p{
-text-align:center;
-padding:8px;
-color:gold;
-}
+.gallery{
 
-/* PRODUCTS */
-.product-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
 }
 
-.product-card{
-background:#111;
-border:1px solid #333;
-padding:15px;
-border-radius:10px;
-}
+.gallery img{
 
-.product-card h3{
-color:gold;
-}
-
-.price{
-font-size:13px;
-opacity:0.9;
-}
-
-/* BUTTON */
-button{
-margin-top:10px;
-padding:10px;
 width:100%;
-border:none;
-border-radius:20px;
-background:#25D366;
-color:#fff;
-font-weight:bold;
-cursor:pointer;
+border-radius:12px;
+border:2px solid gold;
+
 }
 
-/* CART BAR */
-.cart-bar{
-position:fixed;
-bottom:0;
-left:0;
-right:0;
-background:gold;
-color:#000;
-padding:12px;
-text-align:center;
-font-weight:bold;
-cursor:pointer;
+@media(max-width:768px){
+
+.about{
+
+grid-template-columns:1fr;
+
 }
 
-/* MODAL */
-.modal{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.8);
+h1{
+
+font-size:32px;
+
 }
 
-.box{
-background:#111;
-width:90%;
-max-width:400px;
-margin:80px auto;
-padding:20px;
-border-radius:10px;
-border:1px solid gold;
 }
-
-input{
-width:100%;
-padding:10px;
-margin-top:8px;
-}
-
-/* FLOAT BUTTON */
-.float-wa{
-position:fixed;
-bottom:70px;
-right:15px;
-background:#25D366;
-color:#fff;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-font-size:20px;
-}
-
-/* REVIEWS */
-.review-slider{
-max-width:700px;
-margin:auto;
-text-align:center;
-}
-
-.review{
-display:none;
-background:#111;
-border:1px solid #333;
-border-radius:10px;
-padding:20px;
-margin-top:15px;
-}
-
-.review.active{
-display:block;
-}
-
-.stars{
-color:gold;
-font-size:18px;
-margin-bottom:8px;
-}
-
-.verified{
-color:lightgreen;
-font-size:12px;
-margin-bottom:10px;
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>QUEEN K MAGIC</h1>
-<p class="subtitle">Premium Cleaning Products for Homes & Businesses</p>
-<a class="btn" href="https://wa.me/2347045427377">Order on WhatsApp</a>
+
+<img src="logo.jpg" class="logo" alt="Queen K Magic Logo">
+
+<h1>Queen K Magic</h1>
+
+<p class="subtitle">
+Premium Cleaning Products for Homes & Businesses
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn whatsapp"
+href="https://wa.me/2347045427377">
+Order on WhatsApp
+</a>
+
+<a class="btn catalogue"
+href="#products">
+View Products
+</a>
+
+</div>
+
 </header>
 
 <nav>
+
+<a href="#about">About</a>
 <a href="#gallery">Gallery</a>
 <a href="#products">Products</a>
 <a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
-<!-- GALLERY -->
-<section id="gallery">
-<h2>Gallery</h2>
+<section id="about">
 
-<div class="gallery-grid">
+<h2>About Queen K Magic</h2>
 
-<div class="gallery-item">
-<img src="fathersday.png">
-<p>Promo</p>
-</div>
+<div class="about">
 
-<div class="gallery-item">
-<img src="father-son.png">
-<p>Family Care</p>
-</div>
+<div>
 
-<div class="gallery-item">
-<img src="businessdads.png">
-<p>Business Promo</p>
-</div>
+<p>
 
-</div>
-</section>
+Queen K Magic is committed to providing premium-quality cleaning products for homes, offices, restaurants, hotels, schools and businesses.
 
-<!-- PRODUCTS -->
-<section id="products">
-<h2>Products</h2>
+Our products are carefully formulated to deliver excellent cleaning performance, remove stains, eliminate unpleasant odours and leave every surface fresh and sparkling.
 
-<div class="product-grid">
+We are dedicated to quality, customer satisfaction and dependable service.
 
-<div class="product-card">
-<h3>Multi-Purpose Cleaner</h3>
-<p class="price">₦2,100</p>
-<button onclick="addCart('Cleaner',2100)">Add to Cart</button>
-</div>
-
-<div class="product-card">
-<h3>Bleach</h3>
-<p class="price">₦2,000</p>
-<button onclick="addCart('Bleach',2000)">Add to Cart</button>
-</div>
-
-<div class="product-card">
-<h3>Toilet Wash</h3>
-<p class="price">₦4,000</p>
-<button onclick="addCart('Toilet Wash',4000)">Add to Cart</button>
-</div>
-
-</div>
-</section>
-
-<!-- REVIEWS -->
-<section id="reviews">
-<h2>Customer Reviews</h2>
-
-<div class="review-slider">
-
-<div class="review active">
-<div class="stars">★★★★★</div>
-<p class="verified">✔ Verified Buyer</p>
-<p>"Very effective cleaner! Removed stains easily."</p>
-</div>
-
-<div class="review">
-<div class="stars">★★★★★</div>
-<p class="verified">✔ Verified Buyer</p>
-<p>"Fast delivery and great quality products."</p>
-</div>
-
-<div class="review">
-<div class="stars">★★★★★</div>
-<p class="verified">✔ Verified Buyer</p>
-<p>"Perfect for laundry business. Highly recommended."</p>
-</div>
-
-<div class="review">
-<div class="stars">★★★★★</div>
-<p class="verified">✔ Verified Buyer</p>
-<p>"Strong bleach, works perfectly on whites."</p>
-</div>
-
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-<h2>Contact</h2>
-<p style="text-align:center">
-📞 07045427377<br>
-📧 queenkmagic@gmail.com
 </p>
+
+</div>
+
+<div>
+
+<img src="Products.jpg" alt="Queen K Magic Products">
+
+</div>
+
+</div>
+
 </section>
 
-<!-- CART BAR -->
-<div class="cart-bar" onclick="openCart()">
-🛒 Cart: <span id="count">0</span> items
-</div>
+<section id="gallery">
 
-<!-- FLOAT BUTTON -->
-<a class="float-wa" href="https://wa.me/2347045427377">💬</a>
+<h2>Promotions & Gallery</h2>
 
-<!-- CART MODAL -->
-<div class="modal" id="cartModal">
-<div class="box">
+<div class="gallery">
 
-<h2>Your Cart</h2>
-<div id="items"></div>
+<img src="fathersday.png" alt="Father's Day Promotion">
 
-<p>Total: ₦<span id="total">0</span></p>
+<img src="father-son.png" alt="Family Promotion">
 
-<input id="name" placeholder="Your Name">
-<input id="address" placeholder="Address">
+<img src="businessdads.png" alt="Business Promotion">
 
-<button onclick="checkout()">Checkout on WhatsApp</button>
-<button onclick="closeCart()" style="background:red">Close</button>
+<img src="Products.jpg" alt="Products">
+
+<img src="Products1.jpg" alt="More Products">
 
 </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PRODUCTS SECTION -->
+<!-- ========================= -->
+
+<section id="products">
+
+<h2>Our Premium Products</h2>
+
+<p style="text-align:center;max-width:850px;margin:auto 0 40px;color:#ddd;">
+Choose your preferred product and size. Add multiple items to your cart and complete your order through WhatsApp after making payment.
+</p>
+
+<!-- ========================= -->
+<!-- MULTI-PURPOSE CLEANER -->
+<!-- ========================= -->
+
+<h3 style="color:gold;margin-top:40px;">
+✨ Queen K Magic Multi-Purpose Cleaner
+</h3>
+
+<p>Suitable for homes, offices, restaurants, hotels and businesses.</p>
+
+<div class="gallery">
+
+<img src="Multi-Purposecleanerimage1.jpg" alt="">
+<img src="Multi-Purposecleanerimage2.jpg" alt="">
+<img src="Multi-Purposecleanerimage3.jpg" alt="">
+<img src="Multi-Purposesingle.jpg" alt="">
+<img src="Multipurposecleaner500mlto30litres.jpg" alt="">
+
 </div>
+
+<video controls width="100%" style="margin-top:20px;border-radius:12px;">
+<source src="Multi-Purpose1.mp4" type="video/mp4">
+</video>
+
+<br><br>
+
+<video controls width="100%" style="border-radius:12px;">
+<source src="Multi-Purpose2.mp4" type="video/mp4">
+</video>
+
+<br><br>
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:gold;color:black;">
+<th>Size</th>
+<th>Price</th>
+<th></th>
+</tr>
+
+<tr><td>500ml</td><td>₦1,100</td><td><button onclick="addCart('Multi-Purpose Cleaner 500ml',1100)">Add</button></td></tr>
+
+<tr><td>1 Litre</td><td>₦2,100</td><td><button onclick="addCart('Multi-Purpose Cleaner 1L',2100)">Add</button></td></tr>
+
+<tr><td>2 Litres</td><td>₦3,500</td><td><button onclick="addCart('Multi-Purpose Cleaner 2L',3500)">Add</button></td></tr>
+
+<tr><td>4 Litres</td><td>₦6,500</td><td><button onclick="addCart('Multi-Purpose Cleaner 4L',6500)">Add</button></td></tr>
+
+<tr><td>5 Litres</td><td>₦7,500</td><td><button onclick="addCart('Multi-Purpose Cleaner 5L',7500)">Add</button></td></tr>
+
+<tr><td>10 Litres</td><td>₦13,500</td><td><button onclick="addCart('Multi-Purpose Cleaner 10L',13500)">Add</button></td></tr>
+
+<tr><td>15 Litres</td><td>₦19,500</td><td><button onclick="addCart('Multi-Purpose Cleaner 15L',19500)">Add</button></td></tr>
+
+<tr><td>20 Litres</td><td>₦24,500</td><td><button onclick="addCart('Multi-Purpose Cleaner 20L',24500)">Add</button></td></tr>
+
+<tr><td>25 Litres</td><td>₦26,000</td><td><button onclick="addCart('Multi-Purpose Cleaner 25L',26000)">Add</button></td></tr>
+
+<tr><td>30 Litres</td><td>₦30,000</td><td><button onclick="addCart('Multi-Purpose Cleaner 30L',30000)">Add</button></td></tr>
+
+</table>
+
+<br><br>
+
+<!-- ========================= -->
+<!-- SUPER WHITENING BLEACH -->
+<!-- ========================= -->
+
+<h3 style="color:gold;">
+🧴 Super Whitening Bleach
+</h3>
+
+<p>
+Brightens & Restores Whites • Removes Stains & Odours • Disinfects Effectively
+</p>
+
+<div class="gallery">
+
+<img src="Supperwhiteningbleach500ml.jpg" alt="">
+<img src="Superwhiteningbleach2Lto5L.jpg" alt="">
+<img src="Superwhiteningbleach10L.jpg" alt="">
+
+</div>
+
+<table style="width:100%;border-collapse:collapse;text-align:center;margin-top:20px;">
+
+<tr style="background:gold;color:black;">
+<th>Size</th>
+<th>Price</th>
+<th>Order</th>
+</tr>
+
+<tr>
+<td>1 Litre</td>
+<td>₦2,000</td>
+<td>
+<button onclick="addCart('Super Whitening Bleach 1 Litre',2000)"
+style="background:gold;color:black;padding:10px 16px;border:none;border-radius:30px;font-weight:bold;cursor:pointer;">
+🛒 Add to Cart
+</button>
+</td>
+</tr>
+
+<tr>
+<td>2 Litres</td>
+<td>₦3,500</td>
+<td>
+<button onclick="addCart('Super Whitening Bleach 2 Litres',3500)"
+style="background:gold;color:black;padding:10px 16px;border:none;border-radius:30px;font-weight:bold;cursor:pointer;">
+
+🛒 Add to Cart
+</button>
+</td>
+</tr>
+
+<tr>
+<td>4 Litres</td>
+<td>₦6,500</td>
+<td>
+<button onclick="addCart('Super Whitening Bleach 4 Litres',6500)"
+style="background:gold;color:black;padding:10px 16px;border:none;border-radius:30px;font-weight:bold;cursor:pointer;">
+🛒 Add to Cart
+</button>
+</td>
+</tr>
+
+<tr>
+<td>5 Litres</td>
+<td>₦8,000</td>
+<td>
+<button onclick="addCart('Super Whitening Bleach 5 Litres',8000)"
+style="background:gold;color:black;padding:10px 16px;border:none;border-radius:30px;font-weight:bold;cursor:pointer;">
+🛒 Add to Cart
+</button>
+</td>
+</tr>
+
+<tr>
+<td>10 Litres</td>
+<td>₦15,000</td>
+<td>
+<button onclick="addCart('Super Whitening Bleach 10 Litres',15000)"
+style="background:gold;color:black;padding:10px 16px;border:none;border-radius:30px;font-weight:bold;cursor:pointer;">
+🛒 Add to Cart
+</button>
+</td>
+</tr>
+
+</table>
+
+<!-- ========================= -->
+<!-- TOILET WASH -->
+<!-- ========================= -->
+
+<h3 style="color:gold;margin-top:50px;">
+🚽 Queen K Magic Powerful Flush Toilet Wash
+</h3>
+
+<p>
+Removes Tough Stains • Eliminates 99.9% of Germs • Destroys Odour at Source • Long-lasting Freshness
+</p>
+
+<div class="gallery">
+
+<img src="Toiletwash500ml.jpg" alt="Toilet Wash 500ml">
+<img src="Toiletwashsingle.jpg" alt="Toilet Wash">
+<img src="Toiletwashimage.jpg" alt="Toilet Wash">
+<img src="Toiletwash500mlto10litres3.jpg" alt="Toilet Wash Sizes">
+<img src="Toiletwash500mlto10Lset.jpg" alt="Toilet Wash Set">
+<img src="Toiletwashset2.jpg" alt="Toilet Wash Set">
+<img src="Toiletwash3.jpg" alt="Toilet Wash">
+
+</div>
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:gold;color:black;">
+<th>Size</th>
+<th>Price</th>
+<th></th>
+</tr>
+
+<tr>
+<td>500ml</td>
+<td>₦2,000</td>
+<td><button onclick="addCart('Toilet Wash 500ml',2000)">Add</button></td>
+</tr>
+
+<tr>
+<td>1 Litre</td>
+<td>₦4,000</td>
+<td><button onclick="addCart('Toilet Wash 1L',4000)">Add</button></td>
+</tr>
+
+<tr>
+<td>2 Litres</td>
+<td>₦7,000</td>
+<td><button onclick="addCart('Toilet Wash 2L',7000)">Add</button></td>
+</tr>
+
+<tr>
+<td>4 Litres</td>
+<td>₦10,000</td>
+<td><button onclick="addCart('Toilet Wash 4L',10000)">Add</button></td>
+</tr>
+
+<tr>
+<td>5 Litres</td>
+<td>₦12,000</td>
+<td><button onclick="addCart('Toilet Wash 5L',12000)">Add</button></td>
+</tr>
+
+<tr>
+<td>10 Litres</td>
+<td>₦23,000</td>
+<td><button onclick="addCart('Toilet Wash 10L',23000)">Add</button></td>
+</tr>
+
+</table>
+
+<br><br>
+
+<!-- ========================= -->
+<!-- TILE CARE CLEANER -->
+<!-- ========================= -->
+
+<h3 style="color:gold;">
+🏠 Queen K Magic Tile Care Cleaner
+</h3>
+
+<p>
+Professional Tile & Floor Cleaner • Restores Shine • Deep Cleans • Removes Stains • Fresh Long-lasting Fragrance
+</p>
+
+<div class="gallery">
+
+<img src="Tilecare2.jpg" alt="Tile Care">
+<img src="Tilecare4Lto10L.jpg" alt="Tile Care Sizes">
+
+</div>
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:gold;color:black;">
+<th>Size</th>
+<th>Price</th>
+<th></th>
+</tr>
+
+<tr>
+<td>1 Litre</td>
+<td>₦3,000</td>
+<td><button onclick="addCart('Tile Care Cleaner 1L',3000)">Add</button></td>
+</tr>
+
+<tr>
+<td>2 Litres</td>
+<td>₦5,500</td>
+<td><button onclick="addCart('Tile Care Cleaner 2L',5500)">Add</button></td>
+</tr>
+
+<tr>
+<td>4 Litres</td>
+<td>₦10,500</td>
+<td><button onclick="addCart('Tile Care Cleaner 4L',10500)">Add</button></td>
+</tr>
+
+<tr>
+<td>5 Litres</td>
+<td>₦11,000</td>
+<td><button onclick="addCart('Tile Care Cleaner 5L',11000)">Add</button></td>
+</tr>
+
+<tr>
+<td>10 Litres</td>
+<td>₦21,000</td>
+<td><button onclick="addCart('Tile Care Cleaner 10L',21000)">Add</button></td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- ========================= -->
+<!-- SHOPPING CART -->
+<!-- ========================= -->
+
+<section id="cart" style="margin-top:50px;padding:20px;background:#111;border-radius:12px;">
+
+<h2 style="color:gold;text-align:center;">🛒 Your Cart</h2>
+
+<ul id="cartList" style="color:white;"></ul>
+
+<p style="text-align:center;color:white;font-size:18px;">
+<strong>Total:</strong> ₦<span id="total">0</span>
+</p>
+
+</section>
+
+<br><br>
+
+<!-- ========================= -->
+<!-- CHECKOUT -->
+<!-- ========================= -->
+
+<section id="checkout" style="margin-top:40px;background:#111;border:2px solid gold;border-radius:12px;padding:25px;">
+
+<h2 style="color:gold;text-align:center;">💳 Secure Checkout</h2>
+
+<p style="text-align:center;color:white;">
+Complete payment via bank transfer and send proof on WhatsApp.
+</p>
+
+<hr style="border:1px solid #444;">
+
+<p><strong>🏦 Bank:</strong> Moniepoint</p>
+<p><strong>👤 Account Name:</strong> Eunice O Adeyemo</p>
+<p><strong>🔢 Account Number:</strong> 6747976126</p>
+
+<p style="color:gold;font-weight:bold;text-align:center;">
+After payment, send your receipt on WhatsApp for confirmation.
+</p>
+
+<div style="text-align:center;margin-top:25px;">
+
+<button onclick="sendWhatsAppOrder()"
+style="background:#25D366;color:white;padding:14px 28px;border:none;border-radius:30px;font-weight:bold;font-size:16px;cursor:pointer;">
+
+📲 Send Receipt & Complete Order
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- CUSTOMER REVIEWS -->
+<!-- ========================= -->
+
+<section id="reviews">
+
+<h2 style="color:gold;text-align:center;">⭐ Customer Reviews</h2>
+
+<p style="text-align:center;color:#ccc;max-width:850px;margin:auto;">
+Queen K Magic products are trusted by homes, laundries, schools, restaurants, hotels, car wash centres and businesses across Nigeria for outstanding cleaning performance.
+</p>
+
+<div style="background:#111;padding:18px;margin:18px 0;border-radius:10px;border-left:4px solid gold;">
+⭐⭐⭐⭐⭐
+<p>"Very strong bleach! My white clothes look new again. It removes stubborn stains without fading my fabrics."</p>
+<strong>- Mr Bamidele</strong>
+</div>
+
+<div style="background:#111;padding:18px;margin:18px 0;border-radius:10px;border-left:4px solid gold;">
+⭐⭐⭐⭐⭐
+<p>"Excellent for restaurants and commercial kitchens. Cleans perfectly and leaves every surface sparkling."</p>
+<strong>- Mrs Esther</strong>
+</div>
+
+<div style="background:#111;padding:18px;margin:18px 0;border-radius:10px;border-left:4px solid gold;">
+⭐⭐⭐⭐⭐
+<p>"Fast delivery, quality products and excellent customer service. I'll definitely buy again."</p>
+<strong>- Inioluwa</strong>
+</div>
+
+<div style="background:#111;padding:18px;margin:18px 0;border-radius:10px;border-left:4px solid gold;">
+⭐⭐⭐⭐⭐
+<p>"Our laundry business now depends on Queen K Magic. It removes stubborn stains while keeping customers' clothes bright and fresh."</p>
+<strong>- Laundry Business Owner</strong>
+</div>
+
+<div style="background:#111;padding:18px;margin:18px 0;border-radius:10px;border-left:4px solid gold;">
+⭐⭐⭐⭐⭐
+<p>"School uniforms come out looking neat and clean every time. The bleach removes stains without fading the fabric."</p>
+<strong>- Parent</strong>
+</div>
+
+<div style="background:#111;padding:18px;margin:18px 0;border-radius:10px;border-left:4px solid gold;">
+⭐⭐⭐⭐⭐
+<p>"Our hotel uses Queen K Magic daily. The bathrooms, floors and rooms stay sparkling clean with a fresh fragrance."</p>
+<strong>- Hotel Manager</strong>
+</div>
+
+<div style="background:#111;padding:18px;margin:18px 0;border-radius:10px;border-left:4px solid gold;">
+⭐⭐⭐⭐⭐
+<p>"Excellent products for our car wash business. They remove dirt quickly and leave vehicles looking spotless."</p>
+<strong>- Car Wash Owner</strong>
+</div>
+
+<div style="background:#111;padding:18px;margin:18px 0;border-radius:10px;border-left:4px solid gold;">
+⭐⭐⭐⭐⭐
+<p>"The Multi-Purpose Cleaner works perfectly at home and in the office. Tough on dirt and easy on every surface."</p>
+<strong>- Happy Customer</strong>
+</div>
+
+<div style="background:#111;padding:18px;margin:18px 0;border-radius:10px;border-left:4px solid gold;">
+⭐⭐⭐⭐⭐
+<p>"I've recommended Queen K Magic to my family and neighbours because the products are affordable, effective and long-lasting."</p>
+<strong>- Returning Customer</strong>
+</div>
+
+<div style="text-align:center;margin-top:35px;color:#ddd;line-height:2;">
+
+<strong style="color:gold;font-size:24px;">
+Queen K Magic Multi-Purpose Cleaner
+</strong>
+
+<br>
+
+Premium Cleaning Solutions For Every Home And Business
+
+<br><br>
+
+<b>Tough On Dirt. Easy On You.</b>
+
+<br>
+
+<b>Removes Stains Without Fading Fabrics.</b>
+
+<br>
+
+<b>Trusted by Homes, Hotels, Schools, Laundries, Restaurants and Car Wash Businesses.</b>
+
+<br><br>
+
+<b style="color:gold;font-size:22px;">
+Every Ruler Deserves Magic.
+</b>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section id="contact">
+
+<h2 style="color:gold;text-align:center;">📞 Contact Us</h2>
+
+<p style="text-align:center;color:#ccc;">
+For orders, enquiries, and wholesale deals, contact us directly.
+</p>
+
+<div style="text-align:center;color:white;line-height:2;">
+
+📲 WhatsApp: +234 704 542 7377<br>
+🏦 Bank: Moniepoint<br>
+👤 Account Name: Eunice O Adeyemo<br>
+🔢 Account Number: 6747976126
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer style="text-align:center;padding:30px;color:#aaa;background:#111;margin-top:40px;">
+
+© 2026 Queen K Magic. All Rights Reserved.<br>
+Premium Cleaning Products in Nigeria
+
+</footer>
+
+<!-- ========================= -->
+<!-- JAVASCRIPT (MUST BE LAST) -->
+<!-- ========================= -->
 
 <script>
+let cart = [];
+let total = 0;
 
-let cart=[];
-
-function addCart(name,price){
-cart.push({name,price});
-update();
+function addCart(name, price) {
+    cart.push({name, price});
+    total += price;
+    renderCart();
 }
 
-function update(){
-document.getElementById("count").innerText=cart.length;
+function renderCart() {
+    let list = document.getElementById("cartList");
+    let totalBox = document.getElementById("total");
 
-let html="";
-let total=0;
+    if (!list || !totalBox) return;
 
-cart.forEach(i=>{
-html+=`<p>${i.name} - ₦${i.price}</p>`;
-total+=i.price;
-});
+    list.innerHTML = "";
 
-document.getElementById("items").innerHTML=html;
-document.getElementById("total").innerText=total;
+    cart.forEach(item => {
+        let li = document.createElement("li");
+        li.style.color = "white";
+        li.textContent = item.name + " - ₦" + item.price;
+        list.appendChild(li);
+    });
+
+    totalBox.innerText = total;
 }
 
-function openCart(){
-document.getElementById("cartModal").style.display="block";
+function sendWhatsAppOrder() {
+
+    if (cart.length === 0) {
+        alert("Your cart is empty 🛒");
+        return;
+    }
+
+    let message = "Hello Queen K Magic, I want to order:%0A%0A";
+
+    cart.forEach(item => {
+        message += "- " + item.name + " = ₦" + item.price + "%0A";
+    });
+
+    message += "%0A*Total = ₦" + total + "*%0A%0APlease confirm my order.";
+
+    let url = "https://wa.me/2347045427377?text=" + message;
+    window.open(url, "_blank");
 }
-
-function closeCart(){
-document.getElementById("cartModal").style.display="none";
-}
-
-function checkout(){
-
-let name=document.getElementById("name").value;
-let address=document.getElementById("address").value;
-
-let msg="🛒 ORDER%0A";
-
-let total=0;
-
-cart.forEach(i=>{
-msg+=i.name+" - ₦"+i.price+"%0A";
-total+=i.price;
-});
-
-msg+="TOTAL: ₦"+total+"%0A";
-msg+="NAME: "+name+"%0A";
-msg+="ADDRESS: "+address;
-
-window.open("https://wa.me/2347045427377?text="+msg);
-
-}
-
-/* AUTO REVIEWS */
-let reviews=document.querySelectorAll(".review");
-let index=0;
-
-setInterval(()=>{
-reviews.forEach(r=>r.classList.remove("active"));
-index++;
-if(index>=reviews.length) index=0;
-reviews[index].classList.add("active");
-},3000);
-
 </script>
 
 </body>
